@@ -6,7 +6,6 @@
   {% else %}
     {% assign sort_order = 'pushed_at' %}
   {% endif %}
-
   {% if site.projects.exclude.forks %}
     {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
   {% else %}
