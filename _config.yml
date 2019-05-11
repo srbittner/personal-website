@@ -1,12 +1,12 @@
 layout: sidebar
 style: light
 
-repository: cunningham-lab/dsn
-
 plugins:
   - jekyll-octicons
   - jekyll-github-metadata
   - jemoji
+
+repository: cunningham-lab/dsn
 
 permalink: /:year/:month/:day/:title/
 
