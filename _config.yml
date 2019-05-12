@@ -6,8 +6,6 @@ plugins:
   - jekyll-github-metadata
   - jemoji
 
-repository: cunningham-lab/dsn
-
 permalink: /:year/:month/:day/:title/
 
 defaults:
