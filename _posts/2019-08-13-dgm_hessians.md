@@ -10,7 +10,7 @@ Hessians are useful objects to have when analyzing system models.  For example, 
 Deep generative models typically do not have calculable Hessians, because they generally do not have tractable densities.  DGMs with tractable densities called [normalizing flows](https://srbittner.github.io/2019/06/26/normalizing_flows/), admit tractable Hessians.  This blog post is a guide on how to compute them efficiently.
 
 ## Hessians of probability models ##
-The Hessian of a probability model is the second order gradient of the model density $$q_\theta(z)$$ with respect to the parameters $$z$$:
+The Hessian of a probability model is the second order gradient of the model log density $$\log q_\theta(z)$$ with respect to the parameters $$z$$:
 
 $$\frac{\partial^2 \log q_\theta(z)}{\partial z \partial z^\top}$$
 
@@ -52,16 +52,5 @@ $$\frac{\partial^2 h(x)_i h(x)_j}{\partial x \partial x^\top} =
 $$
 
 Since each element of the outer product is composed of such dot products, we can calculate the full $$\frac{\partial \omega \partial \omega^\top}{\partial z \partial z^\top}$$ using just the value, first-order and second-order gradients of each dimension of $$\omega$$ with respect to $$z$$.  By first calculating these for each dimension of $$\omega$$, we can reuse them in their necessary rows and columns of $$\frac{\partial \omega \partial \omega^\top}{\partial z \partial z^\top}$$.  In contrast, naively applying `tf.hessian()` would result in unnecessarily extra computation that increases as a square with dimensionality.
-
-
-
-
-
-
-
-
-
-
-
 
 
