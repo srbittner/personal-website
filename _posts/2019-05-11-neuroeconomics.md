@@ -34,29 +34,6 @@ As you may have guessed, LST is far from the only subfield of economics that can
 
 We also heard great economic research talks by Filip Matejka and Rafael Polania. Filip presented an RI theory of mental accounting -- why people make bad personal finance decisions related to purchasing subsitutes versus complements and naive diversification ([Koszegi et al. 2018](#Koszegi2018attention)).  Rafael presented some compelling theoretical explanations for why humans are bad at making consistent subjective value assessments [(Polania et al. 2019)](#Polania2019efficient).  All of this economic research relied heavily on information theory, most prominently the concept of the information bottleneck.
 
-## The information bottleneck ##
-
-In neuroeconomics, the idea of the information bottleneck is that (some info needs to get through a person and out the other side).  It was great to have NT open the workshop and explain this idea to us.  
-
-![a](/images/05_11_19/informationBottleneck.png){:width="80%"} 
-
-Seminal work on this idea in 2000 formalized this idea mathematically.  If you want to transmit something with a minimal distortion level, you would use this type of cost function. Instead, you may want your reconstruction term to also be information based (include theoretical justification)
-
-P Talk bout colors 
-
-P Talk about the role of mutual information term in all of the economics research.
-
-Andrew Caplin stated that he thinks the most interesting and important future direction of neuroeconomics is to discover the compositional factors of measured mental cost.  
-
-
-## Efficient representations in neural computation ##
-So, where does this cost   
-
- Talk about hierarchical RL and SS's stuff
-
-Hierarchical reasoning is slightly intangible for studying at level of circuit.  Look at what Alan did in visual cortex.
-
-
 ### References ###
 
 <a name="Caplin2018rational"></a> Caplin, Andrew, Mark Dean, and John Leahy. *[Rational inattention, optimal consideration sets, and stochastic choice](https://academic.oup.com/restud/article/86/3/1061/5060717){:target="_blank"}*. The Review of Economic Studies 86.3 (2018): 1061-1094.
